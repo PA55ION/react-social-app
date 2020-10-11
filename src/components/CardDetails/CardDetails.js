@@ -33,8 +33,8 @@ const CardDetails = ({ user }) => {
           <div className="email-tile">
             <i className="ri-mail-line icon"></i>
             <p className="email">{user.email}</p>
-            <p>username: {user.login.username}</p>
-            <p>password: {user.login.password}</p>
+            <p>Username: {user.login.username}</p>
+            <p>Password: {user.login.password}</p>
           </div>
           <div className="address-tile">
             <i className="ri-map-pin-line icon"></i>
@@ -50,8 +50,8 @@ const CardDetails = ({ user }) => {
           </div>
           <div className="phone-tile">
             <i className="ri-phone-line icon"></i>
-            <p>{user.cell}</p>
-            <p>{user.phone}</p>
+            <p>Cell: {user.cell}</p>
+            <p>Mobile: {user.phone}</p>
           </div>
         </div>
       </div>

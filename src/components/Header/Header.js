@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header>
       <Link to="/">
-        <h2>Social App</h2>
+        <h2 className='brand'>Social App</h2>
       </Link>
     </header>
   );

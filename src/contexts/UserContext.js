@@ -30,7 +30,7 @@ const ContextProvider = ({ children }) => {
     // console.log(users)
 
     useEffect(() => {
-        fetch('https://randomuser.me/api/?results=50&inc=gender,name,location,email,dob,phone,cell,id,picture,info,login,nat&nat=us')
+        fetch('https://randomuser.me/api/?results=50&seed=abc&inc=gender,name,location,email,dob,phone,cell,id,picture,info,login,nat&nat=us')
         .then(res => res.json())
         .then(data => setUsers(data.results))
     }, [])

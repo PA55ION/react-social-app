@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { useParams } from "react-router-dom";
 import { UserContext } from "../../contexts/UserContext";
 import CardDetails from '../../components/CardDetails/CardDetails';
+import Header from "../../components/Header/Header";
+
 
 const UserDetails = () => {
   const { users } = useContext(UserContext);
@@ -14,8 +16,11 @@ const UserDetails = () => {
     ));
 
   return (
+    <div>
+    <Header />
     <div className='profile-section'>
       {renderDetail}
+    </div>
     </div>
   );
 };
