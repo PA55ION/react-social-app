@@ -1,41 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
-:root {
-  --black: #071B2A;
-  --gray: #757575;
-  --red: #EA453C;
-  --pink: #F47B6E;
-  --light-blue: #EFFBFE;
-  --blue: #ACE6EC;
-}
-
 
 * {
   font-family: 'Inter', monospace;
-  /* margin: 0;
-  padding: 0;
-  box-sizing: border-box; */
-  /* width: 100%; */
-  /* overflow-x: hidden;
-  overflow-y: scroll;
-  scroll-behavior: smooth; */
-  /* max-width: 1400px; */
-  /* margin: 0 auto; */
+  box-sizing: border-box;
 }
 
 body {
   background-color: #f6f8fa;
 }
 
-main.container {
+.container {
   display: grid;
-  grid-gap: 1.7rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+  padding: 1rem 2.5rem; 
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
   animation: fadeInUpBig;
   animation-duration: 2s;
-  padding: 1.5rem;
-  margin: 1.5rem;
-  word-wrap: break-word;
+  word-wrap: break-word; 
+  margin: 0 auto;
 }
 
 .card-deck {
@@ -79,45 +62,50 @@ main.container {
 .card-body {
   text-align: center;
   margin-top: 70px;
-  line-height: 1.6;
+  line-height: 1;
   text-decoration: none;
+  word-wrap: break-word;
+  padding: 0 .75rem;
 }
 
 a {
   text-decoration: none;
-  color: var(--black);
 }
 
-.email {
-  color: var(--black);
-}
-
-.address {
-  color: var(--gray);
-}
-
-
-.container:nth-of-type(odd) .card-img {
+/* get random color for card header */
+.main-container:nth-of-type(odd) .card-img {
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
 }
 
-.container:nth-of-type(even) .card-img {
+.main-container:nth-of-type(even) .card-img {
   background-image: linear-gradient(120deg, #ff9a9e 0%, #fecfef 100%);
 }
 
-.container:nth-of-type(3n) .card-img {
+.main-container:nth-of-type(3n) .card-img {
   background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
 }
 
-@media screen and (min-width: 530px) {
-  main.container {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-   
+@media screen and (min-width: 520px) {
+  .container {
+    margin: 1rem 2.5rem; 
   }
 }
-/* 
-@media screen and (min-width: 900px) {
-  main.container {
-    
+
+@media screen and (min-width: 1200px) {
+  .container {
+     grid-gap: 1.5rem;
+    padding: 1rem 2rem; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    animation: fadeInUpBig;
+    animation-duration: 2s;
+    margin: 1rem 2rem;
   }
-} */
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+   max-width: 1400px;
+   margin: 0 auto;
+  }
+}
+

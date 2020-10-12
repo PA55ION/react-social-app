@@ -1,28 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
 input[type="text"] {
-  width: 70%;
-  padding: 12px 20px 12px 40px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-  margin: 0 auto;
-  display: block;
-  font-size: 1rem;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  background-color: white;
   background-image: url('../../assets/search-line.png');
   background-position: 10px 10px;
   background-repeat: no-repeat;
-  box-sizing: border-box;
-}
+}  
 
 .search-bar {
-    margin-top: 50px;
-
-
-
+  margin-top: 50px;
 }
 
+.loading {
+    font-family: 'Monoton', cursive;
+    font-size: 3rem;
+    position: fixed;
+    top: 45%;
+    left: 40%;
+    animation: flash;
+    -webkit-animation: flash;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    text-transform: uppercase;
+}

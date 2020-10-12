@@ -7,12 +7,14 @@
 }
 
 .profile-section {
-  /* background-color: #1a1e22; */
   height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .profile-card-img {
@@ -48,7 +50,7 @@
   padding: 1rem 1.5rem; 
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .user-info {
@@ -57,6 +59,10 @@
   overflow: hidden;
   padding: 0.5rem;
   text-align: center;
+}
+
+.user-address {
+  margin-top: -1.5rem;
 }
 
 .user-name {
@@ -73,28 +79,8 @@
   margin: 0.5rem ;
 }
 
-.email-tile,
-.address-tile,
-.phone-tile {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  height: 250px;
-  width: 100%;
-  border-radius: 7px;
-  overflow: hidden;
-  transition: all 0.2s linear;
-  background: white;
-  -webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -o-border-radius: 7px;
-  font-size: 1em;
-  word-wrap: break-word;
-  padding-top: 1rem;
-}
-
 .icon {
   font-size: 35px;
-  color: #333;
 }
 
 .ri-cake-2-line,
@@ -102,12 +88,3 @@
   margin: 0 1rem;
 }
 
-@media screen and (min-width: 720px) {
-  .profile-detail-card {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center; */
-   
-  }
-}

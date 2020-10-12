@@ -1,11 +1,16 @@
 import React from "react";
 import "./CardList.css";
 import { Link } from "react-router-dom";
+import {
+  CardDeck,
+  Text,
+  Name,
+} from "./CardListStyle";
 
 const CardsList = ({ user, id }) => {
   return (
-    <div key={id} className="container">
-      <div className="card-deck">
+    <div className='main-container'>
+      <CardDeck className="card-deck">
         <div className="card">
           <div className="card-img">
             <Link to={`/user/${user.id.value}`}>
@@ -17,18 +22,16 @@ const CardsList = ({ user, id }) => {
             </Link>
           </div>
           <div className="card-body">
-            <h3 className="name" key={id}>
               <Link to={`/user/${user.id.value}`}>
-                {user.name.first} {user.name.last}
+              <Name>{user.name.first} {user.name.last}</Name>
               </Link>
-            </h3>
-            <p className="email">{user.email}</p>
-            <p className="address">
+            <Text className="email">{user.email}</Text>
+            <Text className="address">
               {user.location.city}, {user.location.state}
-            </p>
+            </Text>
           </div>
         </div>
-      </div>
+      </CardDeck>
     </div>
   );
 };

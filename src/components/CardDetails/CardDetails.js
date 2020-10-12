@@ -1,5 +1,6 @@
 import React from "react";
 import "./CardDetails.css";
+import { EmailCard, PhoneCard, AddressCard } from './CardDetailsStyle'
 
 const CardDetails = ({ user }) => {
   let birthday = new Date(user.dob.date); //convert date time
@@ -30,13 +31,13 @@ const CardDetails = ({ user }) => {
           </p>
         </div>
         <div className="profile-detail-card">
-          <div className="email-tile">
+          <EmailCard>
             <i className="ri-mail-line icon"></i>
             <p className="email">{user.email}</p>
             <p>Username: {user.login.username}</p>
             <p>Password: {user.login.password}</p>
-          </div>
-          <div className="address-tile">
+          </EmailCard>
+          <AddressCard>
             <i className="ri-map-pin-line icon"></i>
             <p className="address">
               {user.location.street.number} {user.location.street.name}
@@ -47,12 +48,12 @@ const CardDetails = ({ user }) => {
             <p>
               {user.location.country}, {user.location.postcode}
             </p>
-          </div>
-          <div className="phone-tile">
+            </AddressCard>
+          <PhoneCard>
             <i className="ri-phone-line icon"></i>
             <p>Cell: {user.cell}</p>
             <p>Mobile: {user.phone}</p>
-          </div>
+          </PhoneCard>
         </div>
       </div>
     </section>
