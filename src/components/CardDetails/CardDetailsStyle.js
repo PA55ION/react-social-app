@@ -11,7 +11,7 @@ export const Text = styled.p`
 export const EmailCard = styled.div`
   background: ${({ theme }) => theme.background};
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  height: 250px;
+  height: 220px;
   width: 100%;
   border-radius: 7px;
   overflow: hidden;
@@ -30,7 +30,7 @@ export const EmailCard = styled.div`
 export const PhoneCard = styled.div`
   background: ${({ theme }) => theme.background};
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  height: 250px;
+  height: 220px;
   width: 100%;
   border-radius: 7px;
   overflow: hidden;
@@ -48,7 +48,7 @@ export const PhoneCard = styled.div`
 export const AddressCard = styled.div`
   background: ${({ theme }) => theme.background};
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  height: 250px;
+  height: 220px;
   width: 100%;
   border-radius: 7px;
   overflow: hidden;

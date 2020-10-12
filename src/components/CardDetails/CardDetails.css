@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 .profile {
-    display: grid;
+  display: grid;
 }
 
 .profile-section {
@@ -24,20 +24,11 @@
 }
 
 .profile-img {
-  border: double 4px transparent;
-  border-radius: 50%;
-  background-image: linear-gradient(white, white),
-    radial-gradient(circle at top left, #8fd3f4, #84fab0);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+  border: 5px solid white;
   width: 150px;
   height: 150px;
   margin-bottom: 1.5rem;
   vertical-align: middle;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
   margin-bottom: 3.5rem;
 }
 
@@ -46,11 +37,11 @@
   text-align: center;
   animation: fadeInUpBig;
   animation-duration: 2s;
-  margin-top: 1.5rem;
-  padding: 1rem 1.5rem; 
+  margin-top: 2.5rem;
+  padding: 1rem 1.5rem;
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .user-info {
@@ -76,11 +67,12 @@
 .user-email {
   text-align: center;
   color: white;
-  margin: 0.5rem ;
+  margin: 0.5rem;
 }
 
 .icon {
   font-size: 35px;
+  margin: 2rem;
 }
 
 .ri-cake-2-line,
@@ -88,3 +80,11 @@
   margin: 0 1rem;
 }
 
+@media screen and (min-width: 680px) {
+  .profile-body {
+    text-align: center;
+  }
+  .user-info {
+    display: inline-block;
+  }
+}

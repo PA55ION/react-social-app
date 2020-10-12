@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./pages/Home/Home";
 import UserDetails from "./pages/UserDetails/UserDetail";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { useDarkMode } from "./components/DarkMode/useDarkMode";
 import { GlobalStyles } from "./components/DarkMode/GlobalStyles";
 import { ThemeProvider } from "styled-components";
@@ -13,6 +13,7 @@ function App() {
   const themeMode = theme === "light" ? lightTheme : darkTheme;
   return (
     // use theme provider from styled-component for dark theme 
+    <Router>
     <ThemeProvider theme={themeMode}> 
       <GlobalStyles />
       <Header theme={theme} toggleTheme={themeToggler} />
@@ -21,8 +22,10 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/user/:userId" component={UserDetails} />
         </Switch>
+     
       </div>
     </ThemeProvider>
+    </Router>
   );
 }
 

@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-export const Card = styled.div`
-  border-radius: 7px;
-`;
 
 export const CardDeck = styled.div`
   margin-top: 55px;
@@ -11,7 +8,7 @@ export const CardDeck = styled.div`
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.2s linear;
-  max-width: 350px;
+  max-width: 450px;
   background: ${({ theme }) => theme.background};
 
   &:hover {
