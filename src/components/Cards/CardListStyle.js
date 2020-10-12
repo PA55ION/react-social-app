@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-
+//apply dark mode to cards
 export const CardDeck = styled.div`
   margin-top: 55px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -8,7 +8,6 @@ export const CardDeck = styled.div`
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.2s linear;
-  max-width: 450px;
   background: ${({ theme }) => theme.background};
 
   &:hover {

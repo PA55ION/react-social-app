@@ -12,19 +12,18 @@ function App() {
   const [theme, themeToggler] = useDarkMode();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
   return (
-    // use theme provider from styled-component for dark theme 
+    // use theme provider from styled-component for dark theme
     <Router>
-    <ThemeProvider theme={themeMode}> 
-      <GlobalStyles />
-      <Header theme={theme} toggleTheme={themeToggler} />
-      <div className="App">
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/user/:userId" component={UserDetails} />
-        </Switch>
-     
-      </div>
-    </ThemeProvider>
+      <ThemeProvider theme={themeMode}>
+        <GlobalStyles />
+        <Header theme={theme} toggleTheme={themeToggler} />  {/* switch theme */}
+        <div className="App">
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/user/:userId" component={UserDetails} />
+          </Switch>
+        </div>
+      </ThemeProvider>
     </Router>
   );
 }

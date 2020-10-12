@@ -81,12 +81,7 @@ a {
 
 @media screen and (min-width: 1200px) {
   .container {
-     grid-gap: 1.5rem;
-    padding: 1rem 2rem; 
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    animation: fadeInUpBig;
-    animation-duration: 2s;
-    margin: 1rem 2rem;
   }
 }
 

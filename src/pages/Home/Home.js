@@ -9,8 +9,8 @@ const Home = () => {
   const [search, setSearch] = useState("");
 
   const renderUsers = users
-    .filter((user) => user.name.first.toLowerCase().includes(search)) //filter user by name 
-    .map((user, id) => <CardList user={user} key={id} />);
+    .filter((user) => user.name.first.toLowerCase().includes(search.toLowerCase())) //filter user by name
+    .map((user, id) => <CardList user={user} key={id} />); //map through each profile and display it on card component
   return (
     <div>
       <form>
