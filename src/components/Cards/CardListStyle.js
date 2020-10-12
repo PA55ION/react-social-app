@@ -6,6 +6,7 @@ export const CardDeck = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   height: 350px;
   border-radius: 7px;
+  max-width: 650px;
   overflow: hidden;
   transition: all 0.2s linear;
   background: ${({ theme }) => theme.background};
