@@ -24,7 +24,7 @@ const Home = () => {
           />
         </div>
       </form>
-      {isLoading ? (
+      {!isLoading ? (
         <div className="loading"> Loading... </div>
       ) : (
         <main className="container">{renderUsers}</main>
