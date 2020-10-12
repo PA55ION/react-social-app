@@ -18,7 +18,8 @@ const Header = ({ theme, toggleTheme, history }) => {
           {theme === "light" ? (
             <i className="ri-moon-line"></i>
           ) : (
-            <i className="ri-moon-fill"></i>
+            // <i className="ri-moon-fill"></i>
+            <i className="ri-sun-line"></i>
           )}
         </Button>
       </div>
