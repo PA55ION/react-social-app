@@ -16,8 +16,7 @@ const ContextProvider = ({ children }) => {
             setUsers(data.results)
             setIsLoading(true)
         })
-
-    }, [url])
+    }, [])
 
     return(
         <UserContext.Provider value={{ users, isLoading}}>
