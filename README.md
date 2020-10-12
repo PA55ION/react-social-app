@@ -68,6 +68,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 
+## View app
+
+###### Check out the app [simple-social-app-design](https://simple-social-app-design.web.app/)
+
+### Light Mode
+
 ![ScreenShot]('../../src/assets/app-img.png?raw=true')
 
 ### Dark Mode
