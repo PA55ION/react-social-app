@@ -7,7 +7,8 @@ input[type="text"] {
 }
 
 .search-bar {
-  margin-top: 50px;
+  margin: 50px 0 35px;
+
 }
 
 .loading {

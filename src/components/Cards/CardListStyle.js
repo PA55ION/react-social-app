@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 //apply dark mode to cards
 export const CardDeck = styled.div`
-  margin-top: 55px;
+  margin-top: 14px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   height: 350px;
-  border-radius: 10px;
+  border-radius: 7px;
   overflow: hidden;
   transition: all 0.2s linear;
   background: ${({ theme }) => theme.background};
